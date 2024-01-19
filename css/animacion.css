@@ -1,0 +1,51 @@
+/*-----------------------------------------------------*/
+/*---------      ESTILOS  CON  JAVASCRIPT    ----------*/
+/*-----------------------------------------------------*/
+.estilo_transform{
+    transition: all 0.8s ease;
+}
+.movimientoHorizontal{
+    animation: moverHorizontal 1s linear infinite;
+}
+.mostrarArriba{
+    animation: mostrarArriba 1s;
+}
+.mostrarDerecha{
+    animation: mostrarDerecha 1s;
+}
+.mostrarIzquierda{
+    animation: mostrarIzquierda 1s;
+}
+
+@keyframes mostrarIzquierda{
+    0%{
+        transform: translateX(40px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes mostrarDerecha{
+    0%{
+        transform: translateX(-40px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes mostrarArriba{
+    0%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes moverHorizontal{
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}

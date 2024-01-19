@@ -1,0 +1,88 @@
+
+/*--------------------------------------------------------------------------*/
+/*------------- RESPONSIVE - CELULAR - LAPTOP - TABLET --------------------*/
+/*-------------------------------------------------------------------------*/
+@media (max-width:1250px){
+    main .secundario .titulo{
+        margin-bottom: 50px;
+    }
+    main .secundario .portafolio .proyectos{
+        flex-direction: column;
+    }
+    main .secundario .portafolio .proyectos .proy a img{
+        width: 80%;
+    }
+}
+
+@media (max-width:1125px){
+    main .ternario .contacto_adicional{
+        display: none;
+    }
+    main .secundario .skills{
+        margin-top: 50px;
+    }
+}
+@media (max-width:1085px){
+    main .principal .mitad img{
+        max-width:400px ;
+    }
+    footer{
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer .acerca_de_mi{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:817px){
+    main .principal{
+        margin-top: 10px;
+        flex-direction:column-reverse;
+    }
+    main .principal .mitad .titulos{
+        margin-top: 3px;
+    }
+    main .principal .mitad h1{
+        color: var(--color-blanco);
+        font-size: 50px;
+        text-align: center;
+    }
+    header nav{
+        width: 100%;
+    }
+    main .secundario{
+        min-height: 200vh;
+        padding-bottom: 11px;
+    }
+    main .secundario .portalofio_contenedor {
+            display: grid;
+            grid-template-columns: 1fr;
+    }
+    main .cuarto .skills{
+        margin-top: 50px;
+    }
+    main .cuarto .skills{
+        flex-direction: column;
+    }
+    main .cuarto .skills .todoskills .logo img{
+        width: 100%;
+    }
+    main .cuarto .skills .todoskills .logo .sub_titulo{
+        font-size   : 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    footer .acerca_de_mi,footer .otros_datos{
+        width: 100%;
+    }
+    footer .contenedor{
+        padding: 10px;
+    }
+}   
+@media (max-width:425px){
+    main .principal .mitad img{
+        max-width:300px ;
+    }
+}

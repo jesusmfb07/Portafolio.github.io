@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contacto_gmail.css">
+    <link rel="stylesheet" href="../css/animacion.css">
+    <script src="./js/mensajeContacto.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("O8SyaKb2NQ_VOno_z");
+        })();
+    </script>
+    <title>Contacto</title>
+</head>
+
+<body class="mostrarArriba">
+    <header>
+        <div class="titulo">
+            <h1>Contacto Gmail</h1>
+            <img src="./img/logo_gmail.png" alt="">
+        </div>
+
+    </header>
+    <main>
+        <div class="form">
+            <input type="text" id="fullName" placeholder="Nombre" required>
+            <input type="email" id="email_id" placeholder="Email" required>
+            <input type="text" id="message" placeholder="Mensaje" required>
+
+            <button onclick="SendMail()">Enviar</button>
+        </div>
+        
+    </main>
+    <div class="respuesta" id="respuesta"></div>
+</body>
+
+</html>
